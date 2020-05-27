@@ -1,0 +1,30 @@
+<div *ngIf="product">
+<h3>{{ product.name }}</h3>
+
+<h4>{{product.nacimiento}}</h4>
+
+<p class="centrado">{{ product.description }}</p>
+
+
+<h2>
+    Mejores Libros
+</h2>
+
+<h3>{{product.libro1}}</h3>
+<h4>{{ product.precio | currency }}</h4>
+<img class="imagens" src="{{product.imgb1}}" width="400" height="350">
+<br>
+<button (click)="addToCart(product)">Comprar</button>
+
+<h3>{{product.libro2}}</h3>
+<h4>{{ product.precio2 | currency }}</h4>
+<img class="imagens" src="{{product.imgb2}}" width="400" height="350">
+<br>
+<button (click)="addToCart(product)">Comprar</button>
+
+<h3>{{product.libro3}}</h3>
+<h4>{{ product.precio3 | currency }}</h4>
+<img class="imagens" src="{{product.imgb3}}" width="400" height="350">
+<br>
+<button (click)="addToCart(product)">Comprar</button>
+</div>

@@ -1,0 +1,10 @@
+<div *ngFor="let product of products; index as productId">
+    
+    <h3>
+    <a id="nom" [title]="product.name + ' details'" [routerLink]="['/products', productId]">
+    {{ product.name }}
+    </a>
+    </h3>
+    
+    <img class="imagens" src="{{product.img}}" width="400" height="350">
+</div>
